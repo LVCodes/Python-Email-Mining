@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-
-#     Automata Theory Project    Lauren Vogel
 #
 #   The goal of this project is to utilize regexes to
-#do email mining with imap or pop client.
+# preform email mining with imap client.
 #
 #   I decided to use python and the imap client with a
 #gmail account to mine emails that may contain phishing
@@ -23,7 +21,7 @@ import re
 
 gmail = imaplib.IMAP4_SSL('imap.gmail.com')
 #I like to think I am funny, very happy google let me ':)' in the password
-gmail.login('lmvogeldata@gmail.com', 'Automata:)')
+gmail.login('lmvogeldata@gmail.com', 'WillThisWork:)') #it also will not work as I have closed the account for security 
 gmail.list()
 gmail.select('inbox')
 #pulling the most recent 10 emails to test for spam
